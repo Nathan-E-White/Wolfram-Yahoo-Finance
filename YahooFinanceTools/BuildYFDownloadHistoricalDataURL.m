@@ -5,6 +5,8 @@
 
 BeginPackage["YahooFinanceTools`"];
 
+BuildYFDownloadHistoricalDataURL /: BuildYFDownloadHistoricalDataURL::usage = "BuildYFDownloadHistoricalDataURL[..] creates a URL for downloading historical data from Yahoo Finance.";
+
 Begin["`BuildYFDownloadHistoricalDataURL`"];
 
 BuildYFDownloadHistoricalDataURL[sym_String, start_, end_] := URLBuild[<|
