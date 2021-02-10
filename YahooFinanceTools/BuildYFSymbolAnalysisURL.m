@@ -5,7 +5,7 @@
 
 BeginPackage["YahooFinanceTools`"];
 
-BuildYFSymbolAnalysisURL /: BuildYFSymbolAnalysisURL::usage = "BuildYFSymbolAnalysisURL[...] creates a URL for accessing the Analysis tab of a financial instrument on Yahoo Finance.";
+BuildYFSymbolAnalysisURL::usage = "BuildYFSymbolAnalysisURL[...] creates a URL for accessing the Analysis tab of a financial instrument on Yahoo Finance.";
 
 Begin["`BuildYFSymbolAnalysisURL`"];
 
