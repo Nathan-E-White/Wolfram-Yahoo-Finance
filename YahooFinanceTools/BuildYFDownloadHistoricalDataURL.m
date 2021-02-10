@@ -3,6 +3,9 @@
 (* :Author: nwnn4 *)
 (* :Date: 2021-02-10 *)
 
+BeginPackage["YahooFinanceTools`"];
+
+Begin["`BuildYFDownloadHistoricalDataURL`"];
 
 BuildYFDownloadHistoricalDataURL[sym_String, start_, end_] := URLBuild[<|
   "Scheme" -> "https",
@@ -12,4 +15,7 @@ BuildYFDownloadHistoricalDataURL[sym_String, start_, end_] := URLBuild[<|
   "Path" -> {"", "v7", "finance", "download", sym},
   "Query" -> {"period1" -> UnixTime[start], "period2" -> UnixTime[end], "interval" -> "1d", "events" -> "history", "includeAdjustedClose" -> "true"},
   "Fragment" -> None
-|>]
+|>];
+
+End[(* `BuildYFDownloadHistoricalDataURL` *)];
+EndPackage[(* YahooFinanceTools` *)];

@@ -3,6 +3,9 @@
 (* :Author: nwnn4 *)
 (* :Date: 2021-02-10 *)
 
+BeginPackage["YahooFinanceTools`"];
+
+Begin["`BuildYFSymbolHistoryURL`"];
 
 BuildYFSymbolHistoryURL[sym_String] := URLBuild[<|
   "Scheme" -> "https",
@@ -13,3 +16,6 @@ BuildYFSymbolHistoryURL[sym_String] := URLBuild[<|
   "Query" -> {"p" -> sym},
   "Fragment" -> None
 |>];
+
+End[(* `BuildYFSymbolHistoryURL` *)];
+EndPackage[(* YahooFinanceTools` *)];

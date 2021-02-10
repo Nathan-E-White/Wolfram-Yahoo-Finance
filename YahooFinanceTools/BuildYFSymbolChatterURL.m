@@ -3,6 +3,9 @@
 (* :Author: nwnn4 *)
 (* :Date: 2021-02-10 *)
 
+BeginPackage["YahooFinanceTools`"];
+
+Begin["`BuildYFSymbolChatterURL`"];
 
 BuildYFSymbolChatterURL[sym_String] := URLBuild[<|
   "Scheme" -> "https",
@@ -14,3 +17,5 @@ BuildYFSymbolChatterURL[sym_String] := URLBuild[<|
   "Fragment" -> None
 |>];
 
+End[(* `BuildYFSymbolChatterURL` *)];
+EndPackage[(* YahooFinanceTools` *)];

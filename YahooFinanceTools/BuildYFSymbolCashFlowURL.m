@@ -3,7 +3,9 @@
 (* :Author: nwnn4 *)
 (* :Date: 2021-02-10 *)
 
+BeginPackage["YahooFinanceTools`"];
 
+Begin["`BuildYFSymbolCashFlowURL`"];
 
 BuildYFSymbolCashFlowURL[sym_String] := URLBuild[<|
   "Scheme" -> "https",
@@ -14,3 +16,6 @@ BuildYFSymbolCashFlowURL[sym_String] := URLBuild[<|
   "Query" -> {"p" -> sym},
   "Fragment" -> None
 |>];
+
+End[(* `BuildYFSymbolCashFlowURL` *)];
+EndPackage[(* YahooFinanceTools` *)];

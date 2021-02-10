@@ -17,6 +17,5 @@ BeginPackage["YahooFinanceTools`"];
 
 Begin["`Private`"];
 
-End[]; (* `Private` *)
-
-EndPackage[]
+End[(* `Private` *)];
+EndPackage[];
