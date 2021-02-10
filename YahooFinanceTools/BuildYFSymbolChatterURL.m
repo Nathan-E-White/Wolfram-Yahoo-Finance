@@ -5,6 +5,8 @@
 
 BeginPackage["YahooFinanceTools`"];
 
+BuildYFSymbolChatterURL::usage = "BuildYFSymbolChatterURL[...] creates a URL for accessing the Chat tab for a Financial Instrument on Yahoo Finance.";
+
 Begin["`BuildYFSymbolChatterURL`"];
 
 BuildYFSymbolChatterURL[sym_String] := URLBuild[<|
