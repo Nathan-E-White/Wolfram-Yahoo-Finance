@@ -5,6 +5,8 @@
 
 BeginPackage["YahooFinanceTools`"];
 
+BuildYFSymbolHistoryURL::usage = "BuildYFSymbolHistoryURL[sym] creates a URL for accessing the symbol history tab for a financial instrument on Yahoo Finance.";
+
 Begin["`BuildYFSymbolHistoryURL`"];
 
 BuildYFSymbolHistoryURL[sym_String] := URLBuild[<|
