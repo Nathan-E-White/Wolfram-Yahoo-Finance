@@ -5,6 +5,8 @@
 
 BeginPackage["YahooFinanceTools`"];
 
+(* TODO: usage *)
+
 Begin["`BuildYFSymbolIncomeStatementURL`"];
 
 BuildYFSymbolIncomeStatementURL[sym_String] := URLBuild[<|

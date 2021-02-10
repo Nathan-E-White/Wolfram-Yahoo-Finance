@@ -5,7 +5,7 @@
 
 BeginPackage["YahooFinanceTools`"];
 
-BuildYFSymbolSearchURL /: BuildYFSymbolSearchURL::usage = "BuildYFSymbolSearchURL[sym, opts...] creates a Yahoo Finance URL for executing a symbol search.";
+BuildYFSymbolSearchURL::usage = "BuildYFSymbolSearchURL[sym, opts...] creates a Yahoo Finance URL for executing a symbol search.";
 
 Begin["`BuildYFSymbolSearchURL`"];
 

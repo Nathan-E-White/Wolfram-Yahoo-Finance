@@ -5,7 +5,7 @@
 
 BeginPackage["YahooFinanceTools`"];
 
-CheckInternetConnectivity /: CheckInternetConnectivity::usage = "CheckInternetConnectivity[opts] checks if the Wolfram Language has access to the internet.";
+CheckInternetConnectivity::usage = "CheckInternetConnectivity[opts] checks if the Wolfram Language has access to the internet.";
 $InternetConnectivity::usage = "A global flag set by the CheckInternetConnectivity function.";
 
 Begin["`CheckInternetConnectivity`"];
