@@ -1,0 +1,13 @@
+#! /usr/bin/env bash
+
+## Set git username;
+git config --global user.name "Nathan-E-White";
+
+## Set git email address;
+git config --global user.email "NEWhite@Missouri.edu";
+
+## Allow color syntax highlighting;
+git config --global color.ui true;
+
+## Print some info to the terminal;
+git config --list;
